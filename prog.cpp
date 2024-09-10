@@ -4,8 +4,9 @@ using namespace std;
  
 int main()
 {
-    int x;
-    cout << "Wprowadziłeś kurfa: "<< x << "\n"; 
+    //int x;
+    cout << 2 + 3;
+
+    cout << endl;
     return 0;
 }
- 
