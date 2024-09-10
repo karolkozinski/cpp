@@ -23,7 +23,7 @@ int main()
 
     cout <<"Podaj liczbe: ";
     cin >> liczba;
-    cout << cosZrob (co, liczba); 
+    cout << cosZrob (co, liczba) << "\n"; 
 
     return 0;
 }
