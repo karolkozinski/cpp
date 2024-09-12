@@ -1,29 +1,33 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
+//using namespace std;
 
-string co {};
-int liczba {};
-int cosZrob (string co, int liczba)
+
+int cosZrob (std::string co, int liczba)
 {
-    if ( co == "podwoj" ) return liczba*2;
-    if ( co == "potroj" ) return liczba*3;
+    //std::cout << a;
+    if ( co == "podwoj" ) return liczba * 2;
+    if ( co == "potroj" ) return liczba * 3;
     return 0;
 }
 
 
 int main()
 {
+    std::string co {};
+    int liczba {};
+    int a {17};
     do
-    {
-        cout << "Co robimy (podwoj/potroj): ";
-        cin >> co;
+    {   
+        //std::cout << a;
+        std::cout << "Co robimy (podwoj/potroj): ";
+        std::cin >> co;
     } while (co != "podwoj" && co != "potroj");
 
-    cout <<"Podaj liczbe: ";
-    cin >> liczba;
-    cout << cosZrob (co, liczba) << "\n"; 
+    std::cout <<"Podaj liczbe: ";
+    std::cin >> liczba;
+    std::cout << cosZrob (co, liczba) << "\n"; 
 
     return 0;
 }
